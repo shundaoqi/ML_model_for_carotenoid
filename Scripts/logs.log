@@ -1,0 +1,268 @@
+2023-11-04 11:55:48,667:INFO:PyCaret Supervised Module
+2023-11-04 11:55:48,667:INFO:ML Usecase: regression
+2023-11-04 11:55:48,667:INFO:version 2.3.10
+2023-11-04 11:55:48,667:INFO:Initializing setup()
+2023-11-04 11:55:48,667:INFO:setup(target=prod, ml_usecase=regression, available_plots={'parameter': 'Hyperparameters', 'residuals': 'Residuals', 'error': 'Prediction Error', 'cooks': 'Cooks Distance', 'rfe': 'Feature Selection', 'learning': 'Learning Curve', 'manifold': 'Manifold Learning', 'vc': 'Validation Curve', 'feature': 'Feature Importance', 'feature_all': 'Feature Importance (All)', 'tree': 'Decision Tree', 'residuals_interactive': 'Interactive Residuals'}, train_size=0.8, test_data=None, preprocess=True, imputation_type=simple, iterative_imputation_iters=5, categorical_features=None, categorical_imputation=constant, categorical_iterative_imputer=lightgbm, ordinal_features=None, high_cardinality_features=None, high_cardinality_method=frequency, numeric_features=None, numeric_imputation=mean, numeric_iterative_imputer=lightgbm, date_features=None, ignore_features=None, normalize=False, normalize_method=zscore, transformation=True, transformation_method=yeo-johnson, handle_unknown_categorical=True, unknown_categorical_method=least_frequent, pca=False, pca_method=linear, pca_components=None, ignore_low_variance=False, combine_rare_levels=False, rare_level_threshold=0.1, bin_numeric_features=None, remove_outliers=False, outliers_threshold=0.05, remove_multicollinearity=False, multicollinearity_threshold=0.9, remove_perfect_collinearity=True, create_clusters=False, cluster_iter=20, polynomial_features=False, polynomial_degree=2, trigonometry_features=False, polynomial_threshold=0.1, group_features=None, group_names=None, feature_selection=False, feature_selection_threshold=0.8, feature_selection_method=classic, feature_interaction=False, feature_ratio=False, interaction_threshold=0.01, fix_imbalance=False, fix_imbalance_method=None, transform_target=True, transform_target_method=yeo-johnson, data_split_shuffle=True, data_split_stratify=False, fold_strategy=kfold, fold=10, fold_shuffle=False, fold_groups=None, n_jobs=-1, use_gpu=False, custom_pipeline=None, html=True, session_id=1, log_experiment=False, experiment_name=None, experiment_custom_tags=None, log_plots=False, log_profile=False, log_data=False, silent=False, verbose=True, profile=False, profile_kwargs=None, display=None)
+2023-11-04 11:55:48,667:INFO:Checking environment
+2023-11-04 11:55:48,667:INFO:python_version: 3.7.13
+2023-11-04 11:55:48,667:INFO:python_build: ('default', 'Mar 28 2022 08:03:21')
+2023-11-04 11:55:48,667:INFO:machine: AMD64
+2023-11-04 11:55:48,667:INFO:platform: Windows-10-10.0.22621-SP0
+2023-11-04 11:55:48,667:INFO:Memory: svmem(total=16480579584, available=6273216512, percent=61.9, used=10207363072, free=6273216512)
+2023-11-04 11:55:48,671:INFO:Physical Core: 6
+2023-11-04 11:55:48,671:INFO:Logical Core: 12
+2023-11-04 11:55:48,671:INFO:Checking libraries
+2023-11-04 11:55:48,671:INFO:pd==1.3.5
+2023-11-04 11:55:48,671:INFO:numpy==1.19.5
+2023-11-04 11:55:48,671:INFO:sklearn==0.23.2
+2023-11-04 11:55:48,671:INFO:lightgbm==3.3.2
+2023-11-04 11:55:48,671:WARNING:catboost not found
+2023-11-04 11:55:48,671:WARNING:xgboost not found
+2023-11-04 11:55:48,671:INFO:mlflow==1.28.0
+2023-11-04 11:55:48,671:INFO:Checking Exceptions
+2023-11-04 11:55:48,671:INFO:Declaring global variables
+2023-11-04 11:55:48,671:INFO:USI: aa18
+2023-11-04 11:55:48,671:INFO:pycaret_globals: {'stratify_param', '_ml_usecase', 'log_plots_param', '_all_models', '_internal_pipeline', 'X', '_all_metrics', 'prep_pipe', 'pycaret_globals', 'fold_param', 'n_jobs_param', 'fold_generator', '_gpu_n_jobs_param', 'fold_groups_param', 'transform_target_method_param', 'fix_imbalance_method_param', 'create_model_container', 'display_container', 'iterative_imputation_iters_param', '_available_plots', 'fold_shuffle_param', 'dashboard_logger', 'exp_name_log', 'y_train', 'imputation_classifier', '_all_models_internal', 'seed', 'y', 'gpu_param', 'fix_imbalance_param', 'USI', 'logging_param', 'X_train', 'fold_groups_param_full', 'imputation_regressor', 'X_test', 'target_param', 'experiment__', 'master_model_container', 'data_before_preprocess', 'y_test', 'html_param', 'transform_target_param'}
+2023-11-04 11:55:48,671:INFO:Preparing display monitor
+2023-11-04 11:55:48,671:INFO:Preparing display monitor
+2023-11-04 11:55:48,714:INFO:Importing libraries
+2023-11-04 11:55:48,714:INFO:Copying data for preprocessing
+2023-11-04 11:55:48,719:INFO:Declaring preprocessing parameters
+2023-11-04 11:55:48,730:INFO:Creating preprocessing pipeline
+2023-11-04 11:55:48,736:INFO:Preprocessing pipeline created successfully
+2023-11-04 11:55:48,736:ERROR:(Process Exit): setup has been interupted with user command 'quit'. setup must rerun.
+2023-11-04 11:55:48,736:INFO:Creating global containers
+2023-11-04 11:55:48,750:INFO:Internal pipeline: Pipeline(memory=None, steps=[('empty_step', 'passthrough')], verbose=False)
+2023-11-04 11:55:56,739:WARNING:Couldn't import xgboost.XGBRegressor
+2023-11-04 11:55:56,739:WARNING:Couldn't import catboost.CatBoostRegressor
+2023-11-04 11:55:56,946:WARNING:Couldn't import xgboost.XGBRegressor
+2023-11-04 11:55:56,946:WARNING:Couldn't import catboost.CatBoostRegressor
+2023-11-04 11:55:56,946:INFO:Creating grid variables
+2023-11-04 11:55:56,962:INFO:create_model_container: 0
+2023-11-04 11:55:56,962:INFO:master_model_container: 0
+2023-11-04 11:55:56,962:INFO:display_container: 1
+2023-11-04 11:55:56,986:INFO:Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=True, features_todrop=[],
+                                      id_columns=[], ml_usecase='regression',
+                                      numerical_features=[], target='prod',
+                                      time_features=[])),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='m...
+                                                  random_state_quantile=1,
+                                                  target='prod')),
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='prod')),
+                ('fix_perfect', Remove_100(target='prod')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough')],
+         verbose=False)
+2023-11-04 11:55:56,986:INFO:setup() succesfully completed......................................
+2023-11-04 11:55:57,097:INFO:Initializing get_config()
+2023-11-04 11:55:57,097:INFO:get_config(variable=X_train)
+2023-11-04 11:55:57,097:INFO:Global variable: X_train returned as          ERG8     ERG10     ERG12     ERG13     ERG19     ERG20      IDI1  \
+125  0.959873  1.105856 -0.107611  1.003883  0.092864 -0.263797 -0.518356   
+106  0.254701 -0.531107  1.298280  1.253717 -0.577843 -1.033420 -0.779018   
+44  -1.101317  1.198262 -1.123625 -1.196229 -0.225883 -0.694265 -0.725857   
+151  0.366651 -1.266333  1.638740  1.237495 -1.181374  1.677423 -0.882821   
+53  -0.552794 -0.326033  0.122102 -0.647615  0.955045  0.619706  0.999079   
+..        ...       ...       ...       ...       ...       ...       ...   
+133  0.611506 -0.502960  0.928457 -0.366540 -0.091752  1.898647  1.739721   
+137  0.463183  1.209092  1.144247  0.588238  1.618514  0.805085  0.895635   
+72   0.627168 -0.856575 -1.103161 -1.835786  1.579496  1.664294 -0.399198   
+140  1.141747 -1.282796 -0.549258  1.772416 -0.654147 -0.667603 -0.487555   
+37  -0.171747 -0.462694 -0.747935 -0.898970  0.674441 -0.273166  0.102243   
+
+        tHMG1  
+125  1.495663  
+106  0.246826  
+44   0.388044  
+151  0.765226  
+53   0.325825  
+..        ...  
+133 -1.248247  
+137  1.304790  
+72   0.336591  
+140  0.932223  
+37  -0.555165  
+
+[134 rows x 8 columns]
+2023-11-04 11:55:57,097:INFO:get_config() succesfully completed......................................
+2023-11-04 11:55:57,097:INFO:Initializing get_config()
+2023-11-04 11:55:57,097:INFO:get_config(variable=y_train)
+2023-11-04 11:55:57,097:INFO:Global variable: y_train returned as 125    6.581677
+106    5.111136
+44     3.628135
+151    8.030669
+53     4.314985
+         ...   
+133    2.378183
+137    3.788338
+72     3.067827
+140    5.879443
+37     3.762251
+Name: prod, Length: 134, dtype: float32
+2023-11-04 11:55:57,097:INFO:get_config() succesfully completed......................................
+2023-11-04 11:55:57,097:INFO:Initializing get_config()
+2023-11-04 11:55:57,097:INFO:get_config(variable=X_test)
+2023-11-04 11:55:57,113:INFO:Global variable: X_test returned as          ERG8     ERG10     ERG12     ERG13     ERG19     ERG20      IDI1  \
+40   0.051415 -1.388768 -0.279848 -1.401471 -0.780980 -1.217583 -0.258066   
+132 -1.017657  0.139308  1.126525 -0.262795  1.695760  1.891585  1.431305   
+4   -1.298169 -0.809339 -1.271427 -1.416874 -0.456578 -1.049056 -0.622221   
+148  1.244499 -0.084842  0.205287  1.625263 -0.021447  1.641890  1.709179   
+116 -1.442019 -0.699278  1.291304 -1.256781  2.014564  1.802617 -0.418676   
+11  -0.745624 -1.275276 -0.820691 -1.188240 -0.629765 -1.052017 -0.220724   
+78  -0.755011  0.805667  1.421004 -0.361053 -0.079735 -0.773770  0.114759   
+19  -1.652907 -1.480814 -1.682919 -0.944466 -1.917940 -2.468407 -1.727035   
+84   0.139944 -1.166953  0.947236  1.008662 -0.754750 -0.740310 -0.769980   
+14  -1.339137 -1.012620 -1.287762 -1.174659 -0.576614 -0.868045 -0.825674   
+165  0.019432  1.784419  1.289738  1.862996  2.067947  1.901918  0.556094   
+105  1.318177  1.502232 -0.549906 -0.495020 -0.357305 -0.592566  0.059382   
+95   0.503592 -0.705208 -0.649564  0.906493 -0.299115 -0.746110  0.173480   
+122 -1.131272 -1.004018  0.078870 -1.222494  2.051001 -0.635168  0.473131   
+31  -1.023374 -0.644575 -0.361229 -1.041741  0.136672  1.045984  0.472982   
+162  1.984548  0.076539  0.385658  1.788823  0.136494 -0.107934 -0.049306   
+88   0.652155 -0.279701  1.112301  0.436271 -0.578243 -1.024265 -0.457208   
+161  1.541143 -0.097413  0.507498  1.869398  0.278979  1.848116  2.043252   
+107  1.633803  0.336811  0.372527 -0.850041 -0.843230  0.805392 -1.058563   
+135  0.347985  0.175590  1.740487  0.790009  0.093435  0.056932 -0.120570   
+59  -1.267190  1.309462  1.127585 -1.167529 -1.401778 -1.194076 -0.597949   
+155  0.900603  0.852603  1.282954 -0.277216  1.101097  1.532879 -0.355573   
+47   0.057176 -0.939135  0.140697 -0.940354 -0.349887 -0.339437 -0.033232   
+29  -0.996577 -0.391255 -1.141553 -0.519478 -0.027724  0.442088  1.213522   
+51  -0.138748  0.000395  0.958893 -0.408270 -0.503580 -0.534095  0.381970   
+149 -0.072600 -1.245175  1.360416  0.579430  1.813137  1.754298  1.546888   
+56  -0.060214  0.738400 -1.434023  0.487382  1.478696 -1.178953 -0.492808   
+5   -1.105284 -1.059544 -1.147542 -1.437764 -0.688797 -0.544213 -0.402790   
+90   1.208374  0.714796 -0.870121 -0.266546 -0.952480 -0.361370  0.420112   
+35  -0.563609  0.857004 -1.044383 -0.968806 -0.096839 -0.770144 -0.606158   
+16  -1.412070 -1.401231 -0.418426 -1.167674 -0.963316 -1.376625 -0.986647   
+99   0.279452  1.400315  1.298428  0.749522 -1.348127 -0.939709 -0.709255   
+81   0.073123 -1.053514 -0.222619 -0.881443  0.167810  1.829699  1.051708   
+42  -0.528248  0.630898  0.712139 -1.775578 -1.236367 -1.252307 -2.023382   
+
+        tHMG1  
+40   0.539171  
+132 -0.381835  
+4   -1.551480  
+148 -0.873858  
+116 -1.314111  
+11  -1.091467  
+78   0.355208  
+19   0.940333  
+84   0.237795  
+14   0.320926  
+165 -0.964186  
+105  0.793787  
+95   1.574015  
+122  1.617557  
+31  -1.065045  
+162  1.777915  
+88   0.610584  
+161 -0.945869  
+107  1.075680  
+135  0.459333  
+59  -0.058319  
+155  1.972729  
+47   0.419773  
+29  -1.317803  
+51  -1.250303  
+149  1.281395  
+56  -1.640926  
+5   -1.312383  
+90   1.150450  
+35  -0.849040  
+16   0.400042  
+99  -0.989490  
+81   0.066500  
+42  -0.034544  
+2023-11-04 11:55:57,113:INFO:get_config() succesfully completed......................................
+2023-11-04 11:55:57,113:INFO:Initializing get_config()
+2023-11-04 11:55:57,113:INFO:get_config(variable=y_test)
+2023-11-04 11:55:57,113:INFO:Global variable: y_test returned as 40     6.004346
+132    6.337262
+4      3.298958
+148    4.620449
+116    5.632199
+11     4.835009
+78     4.770506
+19     3.504291
+84     4.499105
+14     3.954456
+165    6.127283
+105    2.317289
+95     9.269714
+122    8.629868
+31     3.644536
+162    4.672610
+88     4.201620
+161    2.305550
+107    2.918264
+135    3.071666
+59     3.482414
+155    9.522851
+47     3.827551
+29     3.008135
+51     2.667040
+149    6.566906
+56     4.211995
+5      2.598799
+90     3.869304
+35     2.921580
+16     6.375975
+99     3.249177
+81     7.573339
+42     4.240244
+Name: prod, dtype: float32
+2023-11-04 11:55:57,113:INFO:get_config() succesfully completed......................................
+2023-11-04 11:55:57,113:INFO:Initializing get_config()
+2023-11-04 11:55:57,113:INFO:get_config(variable=X)
+2023-11-04 11:55:57,113:INFO:Global variable: X returned as          ERG8     ERG10     ERG12     ERG13     ERG19     ERG20      IDI1  \
+0   -1.364322 -1.117596 -1.258431 -1.515102 -0.705599 -1.228638 -0.917299   
+1   -1.433506 -1.092853 -1.133928 -1.507366 -1.116497 -1.273078 -0.505438   
+2   -1.357560 -1.494452 -0.979244 -1.503706 -0.942008 -1.105707 -0.516441   
+3   -1.456346 -1.155300 -1.626904 -1.370605 -0.908079 -0.513206 -0.585559   
+4   -1.298169 -0.809339 -1.271427 -1.416874 -0.456578 -1.049056 -0.622221   
+..        ...       ...       ...       ...       ...       ...       ...   
+163  1.023782 -0.632019  1.914019  0.695982  0.989757  1.864917  0.233585   
+164  1.731113  1.483381  1.800456  1.712214  1.057571  0.088375  0.516417   
+165  0.019432  1.784419  1.289738  1.862996  2.067947  1.901918  0.556094   
+166  1.358624  1.668019  1.412440  0.770822  2.008298  1.884023  2.634321   
+167  0.931664  1.913609  1.362900  1.375560  2.054971  1.909508  0.241257   
+
+        tHMG1  
+0   -1.582951  
+1   -1.561024  
+2   -1.388651  
+3   -1.193087  
+4   -1.551480  
+..        ...  
+163  0.697236  
+164  1.471529  
+165 -0.964186  
+166  2.304040  
+167 -0.699893  
+
+[168 rows x 8 columns]
+2023-11-04 11:55:57,129:INFO:get_config() succesfully completed......................................
+2023-11-04 11:55:57,129:INFO:Initializing get_config()
+2023-11-04 11:55:57,129:INFO:get_config(variable=y)
+2023-11-04 11:55:57,129:INFO:Global variable: y returned as 0      3.739360
+1      2.448719
+2      2.454255
+3      2.585698
+4      3.298958
+         ...   
+163    2.963520
+164    2.669628
+165    6.127283
+166    8.678808
+167    2.963520
+Name: prod, Length: 168, dtype: float32
+2023-11-04 11:55:57,129:INFO:get_config() succesfully completed......................................
